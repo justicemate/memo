@@ -32,8 +32,7 @@
     <input type="hidden" name="topic" value="{{ .Topic }}"/>
     <p>
         <label for="message">{{ T "message" }} <span class="message-byte-count byte-count"></span></label>
-        <input id="message" type="text" name="message" class="form-control" value="" placeholder="{{ T "message" }}"
-               required/>
+        <textarea id="message" type="text" name="message" class="form-control" placeholder="{{ T "message" }}" required/></textarea>
     </p>
     <p>
         <input id="message-submit" class="btn btn-primary" type="submit" value="{{ T "Send" }}"/>
